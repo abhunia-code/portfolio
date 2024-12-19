@@ -104,6 +104,21 @@
         .project h3 {
             margin: 0;
         }
+	.small-image {
+    width: 200px;  /* Set fixed width */
+    height: auto;  /* Maintain aspect ratio */
+    border: 2px solid white; /* Optional: Add a border */
+    border-radius: 5px; /* Optional: Rounded corners */
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Optional: Shadow effect */
+}
+.about-content {
+    display: flex; /* Use Flexbox for layout */
+    align-items: center; /* Center align items vertically */
+}
+
+.about-content a {
+    margin-right: 20px; /* Add some space between the image and text */
+}
     </style>
 </head>
 <body>
@@ -131,10 +146,17 @@
 
     <section id="about" class="about">
         <h2>About Me</h2>
-        <p>
-            Hi! I'm a library science student with a deep interest in organizing knowledge and making information accessible.
-            My studies focus on cataloging, metadata management, and the latest technologies in library management systems.
-        </p>
+		<div class="about-content">
+        <a href="https://www.google.com/search?q=library" target="_blank">
+            <img src="https://raw.githubusercontent.com/abhunia-code/portfolio/d6dbd962249fa08c0fbe7fba4a08df41f986ce62/Somnath.jpg" alt="Library Image 1" class="small-image">
+        </a>
+        <div class="about-text">
+            <p>
+                Hi! I'm a library science student with a deep interest in organizing knowledge and making information accessible.
+                My studies focus on cataloging, metadata management, and the latest technologies in library management systems.
+            </p>
+        </div>
+    </div>
     </section>
 
     <section id="projects" class="projects">
